@@ -6,6 +6,12 @@
 * Keyurkumar Hansoti (khansoti@uncc.edu)    
 * Urma Haldar  (uhaldar@uncc.edu)    
 
+## Introduction
+Every year college basketball fans participate in March Madness. They enter office pools or bet on the outcome of the 63 games that constitute the National Collegiate Athletic
+Association’s (NCAA) basketball championship tournament. One web site indicated that billions of dollars are bet on the outcomes of games during this tournament. Moreover, Google
+Scholar found over 18,000 references to the term “March Madness Betting”. Not all of these references are relevant to economics, but at least some include optimal betting strategies, e.g.
+Metrick, 1995; Kaplan and Garstka, 2001; Clair and Letscher, (2007). So it is no surprise that there has been interest in methods for forecasting the outcomes of these games.
+
 ## Overview 
 * The Project aims to predict basketball game outcomes using data analysis tools such Hadoop, BigQyery, PySpark.  
       
@@ -58,15 +64,17 @@ For our NCAA data we’ll be predicting possible matchup mixes for all teams, an
 • Gradient Boosting-A benefit of using gradient boosting is that after the boosted trees are constructed, it is relatively straightforward to retrieve importance scores for each attribute. Generally, importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. The more an attribute is used to make key decisions with decision trees, the higher its relative importance.
 For our NCAA data, we’ll be using XGBoost package of python, to predict matchups of all 2019 basketball games and try to predict the winners. The results are better than the previous.
 
+## Dashboards
+We have uploaded a Dashboards.docx in the github repository containing the screenshots of the Dashboards we have prepared in Data Studio.
 
 ## References, Citations and Abstract
 
-#Abstract
+# Abstract
 
 The following papers have helped us understand the data, learn data analysis and data modelling. The authors have given a detail description to help understand the game and its attributes from user perspective which helps give a better insight to the project.[1] The authors have also explained the domain in detail highlighting the overall data and the goal.[2][3] The papers also helps understand how seeding affects the basketball games and contributes in the prediction of the winning and the loosing teams.[3] One can also learn how the prediction and outcomes are formulated as per the attributes which helps to better design the model.
 
 
-#References
+# References
 
 1. The National Collegiate Athletic Association (NCAA) basketball championship tournament (USA): statistics, prediction and analysis 
    https://ieeexplore.ieee.org/document/8148782
