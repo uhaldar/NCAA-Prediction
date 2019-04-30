@@ -53,20 +53,30 @@ Metrick, 1995; Kaplan and Garstka, 2001; Clair and Letscher, (2007). So it is no
 
 For our Data modelling, we have planned 3 approaches for prediction:
 
-• Linear Regression-Linear regression is a basic and commonly used type of predictive analysis.  The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable?  (2) Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable?  These regression estimates are used to explain the relationship between one dependent variable and one or more independent variables.  The simplest form of the regression equation with one dependent and one independent variable is defined by the formula y = c + b*x, where y = estimated dependent variable score, c = constant, b = regression coefficient, and x = score on the independent variable.
+• Linear Regression - Linear regression is a basic and commonly used type of predictive analysis.  The overall idea of regression is to examine two things: (1) does a set of predictor variables do a good job in predicting an outcome (dependent) variable?  (2) Which variables in particular are significant predictors of the outcome variable, and in what way do they–indicated by the magnitude and sign of the beta estimates–impact the outcome variable?  These regression estimates are used to explain the relationship between one dependent variable and one or more independent variables.  The simplest form of the regression equation with one dependent and one independent variable is defined by the formula y = c + b*x, where y = estimated dependent variable score, c = constant, b = regression coefficient, and x = score on the independent variable.
 For our NCAA data, we have used BigQuery ML model to do our Linear Regression, further details are in the document, UsingBigQueryInML.pdf., with queries and output.
 
-• Logistic Regression- Logistic regression is a statistical method for analysing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a dichotomous variable (in which there are only two possible outcomes).
+• Logistic Regression - Logistic regression is a statistical method for analysing a dataset in which there are one or more independent variables that determine an outcome. The outcome is measured with a dichotomous variable (in which there are only two possible outcomes).
 In logistic regression, the dependent variable is binary or dichotomous, i.e. it only contains data coded as 1 (TRUE, success, pregnant, etc.) or 0 (FALSE, failure, non-pregnant, etc.).
 The goal of logistic regression is to find the best fitting (yet biologically reasonable) model to describe the relationship between the dichotomous characteristic of interest (dependent variable = response or outcome variable) and a set of independent (predictor or explanatory) variables. 
 For our NCAA data we’ll be predicting possible matchup mixes for all teams, and winning teams as well using Python and model_selection with Jupyter Notebook. The results are better than linear regression.
 
-• Gradient Boosting-A benefit of using gradient boosting is that after the boosted trees are constructed, it is relatively straightforward to retrieve importance scores for each attribute. Generally, importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. The more an attribute is used to make key decisions with decision trees, the higher its relative importance.
+• Gradient Boosting - A benefit of using gradient boosting is that after the boosted trees are constructed, it is relatively straightforward to retrieve importance scores for each attribute. Generally, importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. The more an attribute is used to make key decisions with decision trees, the higher its relative importance.
 For our NCAA data, we’ll be using XGBoost package of python, to predict matchups of all 2019 basketball games and try to predict the winners. The results are better than the previous.
 
-Bracketology - Bracketology is the process of predicting the field of college basketball participants in the NCAA Basketball Tournament, named as such because it is commonly used to fill in tournament brackets for the postseason. It incorporates some method of predicting what the NCAA Selection Committee will use as its Ratings Percentage Index in order to determine at-large (non-conference winning) teams to complete the field of 64 teams, and, to seed the field by ranking all teams from first through sixty-eighth. Our document, Bracketology.pdf has our detailed workaround.
+• Bracketology - Bracketology is the process of predicting the field of college basketball participants in the NCAA Basketball Tournament, named as such because it is commonly used to fill in tournament brackets for the postseason. It incorporates some method of predicting what the NCAA Selection Committee will use as its Ratings Percentage Index in order to determine at-large (non-conference winning) teams to complete the field of 64 teams, and, to seed the field by ranking all teams from first through sixty-eighth. Our document, Bracketology.pdf has our detailed workaround.
 
-Neural Networks-Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. 
+• Neural Networks - Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. 
+
+## Performance
+    
+| Algorithm | Accuracy |     
+| -- | -- |    
+| Linear Regression | 72.3% |   
+| Logistic Regression | 74% |
+| Neural Networks | 73% | 
+| Bracketology | 74.8% |  
+| Gradient Boosting | 76% |
 
 ## Dashboards
 We have uploaded a Dashboards.docx in the github repository containing the screenshots of the Dashboards we have prepared in Data Studio.
