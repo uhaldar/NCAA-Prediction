@@ -71,6 +71,24 @@ Neural Networks-Neural networks are a set of algorithms, modeled loosely after t
 ## Dashboards
 We have uploaded a Dashboards.docx in the github repository containing the screenshots of the Dashboards we have prepared in Data Studio.
 
+## Work Division    
+ The complete project has been accomplished together with collabrating and taking inputs from all the team members.
+    
+| Name | Task |     
+| -- | -- |    
+| Keyurkumar Hansoti | Research questions and definition of audience |   
+| | Dashboards for User and Data Engineer |
+| | Prediction using Bracketology 
+| | Documentation of Team Members and Duties on Github |  
+| Priyanka Sawant | Prediction using Linear and Logistic regression |
+| | Evaluation of results |
+| | Final Dashboard for User Group |
+| | Presentation |
+| Urma Haldar | Pre-processing of data |
+| | Prediction using Gradient Boosting and Neural Networks |
+| | Research citations | 
+| | Documentation of Project Steps on Github |
+
 ## References, Citations and Abstract
 
 # Abstract
