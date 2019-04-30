@@ -64,6 +64,10 @@ For our NCAA data we’ll be predicting possible matchup mixes for all teams, an
 • Gradient Boosting-A benefit of using gradient boosting is that after the boosted trees are constructed, it is relatively straightforward to retrieve importance scores for each attribute. Generally, importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. The more an attribute is used to make key decisions with decision trees, the higher its relative importance.
 For our NCAA data, we’ll be using XGBoost package of python, to predict matchups of all 2019 basketball games and try to predict the winners. The results are better than the previous.
 
+Bracketology - Bracketology is the process of predicting the field of college basketball participants in the NCAA Basketball Tournament, named as such because it is commonly used to fill in tournament brackets for the postseason. It incorporates some method of predicting what the NCAA Selection Committee will use as its Ratings Percentage Index in order to determine at-large (non-conference winning) teams to complete the field of 64 teams, and, to seed the field by ranking all teams from first through sixty-eighth. Our document, Bracketology.pdf has our detailed workaround.
+
+Neural Networks-Neural networks are a set of algorithms, modeled loosely after the human brain, that are designed to recognize patterns. They interpret sensory data through a kind of machine perception, labeling or clustering raw input. The patterns they recognize are numerical, contained in vectors, into which all real-world data, be it images, sound, text or time series, must be translated. 
+
 ## Dashboards
 We have uploaded a Dashboards.docx in the github repository containing the screenshots of the Dashboards we have prepared in Data Studio.
 
